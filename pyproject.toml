@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sdutil"
+version = "1.0.0"
+description = "Manage System Data files and local Time Machine snapshots on macOS."
+authors = ["William Dye"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+treelib = "^1.7.1"
+
+[tool.poetry.scripts]
+sdutil = "sdutil.__main__:main"
